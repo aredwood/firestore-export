@@ -10,8 +10,7 @@
   "scripts": {
     "build": "tsc",
     "lint": "tslint --project .",
-    "prepublish": "tsc",
-    "write-token":"printenv NPM_TOKEN >> .npmrc"
+    "prepublish": "tsc"
   },
   "files": [
     "dist"
