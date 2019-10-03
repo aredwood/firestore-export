@@ -5,10 +5,9 @@ steps:
   entrypoint: 'yarn'
   args: ['run','lint']
 
-- name: "ubuntu"
-  args: ["echo "//registry.npmjs.org/:_authToken=${_NPM_TOKEN}" > ~/.npmrc"]
-  env: 
-    - "NPM_TOKEN=${_NPM_TOKEN}"
+- name: 'ubuntu'
+  args: ['echo "//registry.npmjs.org/:_authToken=${_NPM_TOKEN}" > ~/.npmrc']
+
 - name: 'node:10.16.3'
   entrypoint: 'npm'
   args: ['publish']
