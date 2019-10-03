@@ -10,7 +10,7 @@
   "scripts": {
     "build": "tsc",
     "lint": "tslint --project .",
-    "prepublish": "tsc"
+    "prepublish": "tsc && node prepare.js"
   },
   "files": [
     "dist"
