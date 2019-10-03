@@ -2,6 +2,12 @@ import { Firestore } from "@google-cloud/firestore";
 import { queue } from "async";
 import fs from "fs";
 
+/**
+ * Downloads all documents of a collection to local fs
+ * @param {Firestore} firestore - a firestore instance
+ * @param {string} collectionString - the string of the collection to download
+ * @param {string} exportLocation - export location, default to ./export 
+ */
 const firestoreExport = async (firestore: Firestore, collectionString: string, exportLocation: string = "./export") => {
     return new Promise(async (res, rej) => {
 
