@@ -1,7 +1,10 @@
 steps:
-- name: 'gcr.io/cloud-builders/yarn'
-- name: 'gcr.io/cloud-builders/yarn'
+- name: 'node:10.16.3'
+  entrypoint: 'yarn'
+- name: 'node:10.16.3'
+  entrypoint: 'yarn'
   args: ['run','lint']
-- name: 'gcr.io/cloud-builders/yarn'
+- name: 'node:10.16.3'
+  entrypoint: 'yarn'
   args: ['run', 'write-token']
   env: ['NPM_TOKEN=${_NPM_TOKEN}']
