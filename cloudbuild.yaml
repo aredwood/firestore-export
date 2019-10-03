@@ -1,0 +1,8 @@
+steps:
+
+- name: 'gcr.io/cloud-builders/yarn'
+- name: 'gcr.io/cloud-builders/yarn',
+  args: ['run','lint']
+- name: 'gcr.io/cloud-builders/yarn'
+  args: ['run', 'write-token']
+  env: ['NPM_TOKEN=${_NPM_TOKEN}']
