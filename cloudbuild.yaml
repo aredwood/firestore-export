@@ -4,8 +4,6 @@ steps:
 - name: 'node:10.16.3'
   entrypoint: 'yarn'
   args: ['run','lint']
-- name: 'ubuntu'
-  args: ['./loadToken.sh']
 - name: 'node:10.16.3'
   entrypoint: 'yarn'
-  args: ['publish']
+  args: ['publish','--registry=/registry.npmjs.org/:_authToken=${_NPM_TOKEN}']
