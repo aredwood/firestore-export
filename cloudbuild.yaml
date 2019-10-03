@@ -6,6 +6,6 @@ steps:
   args: ['run','lint']
 - name: 'node:10.16.3'
   entrypoint: 'npm'
-  args: ['publish']
+  args: ['whoami']
   env: 
     - "NPM_TOKEN=${_NPM_TOKEN}"
