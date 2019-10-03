@@ -1,6 +1,6 @@
 {
   "name": "firestore-export",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "downloads a firestore collection to disk",
   "main": "./dist/index.js",
   "repository": "git@github.com:aredwood/firestore-export.git",
