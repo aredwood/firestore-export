@@ -1,6 +1,6 @@
 {
   "name": "firestore-export",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "downloads a firestore collection to disk",
   "main": "./dist/index.js",
   "repository": "git@github.com:aredwood/firestore-export.git",
@@ -9,14 +9,16 @@
   "private": false,
   "scripts": {
     "build": "tsc",
-    "lint":"tslint --project .",
+    "lint": "tslint --project .",
     "prepublish": "tsc"
   },
   "files": [
     "dist"
   ],
-  "nodemonConfig":{
-    "ignore":["export/*"]
+  "nodemonConfig": {
+    "ignore": [
+      "export/*"
+    ]
   },
   "dependencies": {
     "@google-cloud/firestore": "^2.3.0",
